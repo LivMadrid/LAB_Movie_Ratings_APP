@@ -17,7 +17,7 @@ class User(db.Model):
                         autoincrement=True,
                         primary_key=True)
     email = db.Column(db.String, nullable=False, unique=True)
-    password = db.Column(db.String, nullable=False, unique=True)
+    password = db.Column(db.String, nullable=False, unique=False)
 
     # ratings = a list of Rating objects
 
